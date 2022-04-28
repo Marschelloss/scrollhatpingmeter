@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module Docstring
+Small utility to use Pimoroni's Scroll HAT or Scroll pHAT as a ping meter.
 """
 
 __author__ = "Marcel Keßler"
