@@ -19,8 +19,8 @@ def main(args):
     """ Main entry point of the app """
     logger.info("Pinging target '%s' every %s second(s)." % (args.host, args.timer))
 
-    if args.brightness < 1 or args.brightness > 10:
-        logger.error("Brightness must be between 1 and 10. Exiting...")
+    if args.brightness < 0.1 or args.brightness > 1.0:
+        logger.error("Brightness must be between 0.1 and 1.0 - Exiting...")
         sys.exit()
 
     if not args.disabledisplay:
@@ -89,9 +89,9 @@ if __name__ == "__main__":
     parser.add_argument("-b",
                         "--brightness",
                         action="store",
-                        type=int,
+                        type=float,
                         dest="brightness",
-                        default=10,
+                        default=1.0,
                         help="Sets brightness of display. Use range between 1 and 10. Default: 10")
 
     parser.add_argument(
