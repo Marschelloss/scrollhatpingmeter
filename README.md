@@ -28,6 +28,7 @@ Some options can be set via additional flags:
 
 ```bash
 ./scrollhatpingmeter.py --help
+
 usage: scrollhatpingmeter.py [-h] [--disabledisplay] [-H HOST] [-t TIMER] [-b BRIGHTNESS] [-v] [--version]
 
 optional arguments:
@@ -37,7 +38,7 @@ optional arguments:
   -t TIMER, --timer TIMER
                         Time in seconds between pings. Default: 10
   -b BRIGHTNESS, --brightness BRIGHTNESS
-                        Sets brightness of display. Use range between 1 and 10. Default: 10
+                        Sets brightness of display. Use range between 0.1 and 1.0. Default: 1.0
   -v, --verbose         Verbosity (-v, -vv, etc)
   --version             show program's version number and exit
 ```

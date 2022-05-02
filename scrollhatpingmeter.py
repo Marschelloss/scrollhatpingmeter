@@ -92,7 +92,7 @@ if __name__ == "__main__":
                         type=float,
                         dest="brightness",
                         default=1.0,
-                        help="Sets brightness of display. Use range between 1 and 10. Default: 10")
+                        help="Sets brightness of display. Use range between 0.1 and 1.0. Default: 1.0")
 
     parser.add_argument(
         "-v",
